@@ -1,0 +1,144 @@
+taskList:
+-   id: 1
+    #测试方法名
+    testName: recommendTestAndroid
+    #服务uri，注意带/
+    uri: /user/address/recommend  
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+   # headers: 
+   #   User-Agent: aWeidao/7.3.0 (X900; Android 5.0.2)
+    #请求参数
+    params:
+      out_coord_type: baidu
+      city: bj
+-   id: 2
+    #测试方法名
+    testName: recommendTestIOS
+    #服务uri，注意带/
+    uri: /user/address/recommend  
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+   # headers: 
+   #   User-Agent: YDMobileClient/7.3.0 (iPhone; iPhone OS 8.2; zh_CN)
+    #请求参数
+    params:
+      address_type: 1
+      city: bj
+      out_coord_type: mars
+-   id: 3
+    #测试方法名
+    testName: recommend2TestIOS
+    #服务uri，注意带/
+    uri: /user/address/recommend  
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+   # headers: 
+   #   User-Agent: YDMobileClient/7.3.0 (iPhone; iPhone OS 8.2; zh_CN)
+    #请求参数
+    params:
+      address_type: 2
+      city: bj
+      out_coord_type: mars
+-   id: 4
+    # 安卓 常用地址列表
+    testName: userAddreGetAnd
+    uri: /user/address 
+    methodType: get
+    params: 
+      page: 1
+      out_coord_type: baidu
+-   id: 5
+    # ios常用地址列表
+    testName: userAddreGetIOS
+    uri: /user/address 
+    methodType: get
+    params: 
+      out_coord_type: mars
+-   id: 6
+    # 安卓 历史地址列表
+    testName: userAddreHisGetAnd
+    uri: /user/address/history
+    methodType: get
+    params: 
+      out_coord_type: baidu
+-   id: 7
+    # IOS历史地址列表
+    testName: userAddreHisGetIOS
+    uri: /user/address/history
+    methodType: get
+    params: 
+      out_coord_type: mars
+-   id: 8
+    # 安卓添加常用地址
+    testName: userAddPostAnd 
+    uri: /user/address
+    methodType: post
+    params: 
+      in_coord_type: baidu
+      address: 天安门
+      icon: 3
+      latlng: 39.91511237702834,116.40395508249037
+      address_detail: 北京市东城区东长安街
+      city: bj
+-   id: 9
+    # IOS添加常用地址
+    testName: userAddPostIOS 
+    uri: /user/address
+    methodType: post
+    params: 
+      address: 天安门
+      address_detail: 北京市东城区东长安街
+      city: bj
+      icon: 7
+      latlng: 39.90877595174516,116.3975903535562
+      out_coord_type: mars
+-   id: 10
+    # 安卓修改常用地址
+    testName: userAddUpdateAnd
+    uri: /user/address/update
+    methodType: post
+    params: 
+      address: 北京南苑机场
+      in_coord_type: baidu
+      icon: 6
+      address_detail: 北京市丰台区警备东路
+      city: bj
+      latlng: 39.79762455859,116.40346746178
+-   id: 11
+    # IOS修改常用地址
+    testName: userAddUpdateIOS
+    uri: /user/address/update
+    methodType: post
+    params: 
+      address: 北京南苑机场
+      address_detail: 北京市丰台区警备东路
+      city: bj
+      icon: 6
+      latlng: 39.791283,116.397096
+      out_coord_type: mars
+-   id: 12
+    # 安卓删除常用地址
+    testName: userAddDeleAnd
+    uri: /user/address/delete
+    methodType: post
+   # params:    
+-   id: 13
+    # IOS删除常用地址
+    testName: userAddDeleIOS
+    uri: /user/address/delete
+    methodType: post
+   # params:  
+-   id: 14
+    # 安卓 删除历史地址
+    testName: userAddDeleHisAnd
+    uri: /user/address/DeleteHistory
+    methodType: post
+    params: 
+       out_coord_type: baidu 
+-   id: 15
+    # IOS 删除历史地址
+    testName: userAddDeleHisIOS
+    uri: /user/address/DeleteHistory
+    methodType: post
+    #  params:                          

@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Backend API Automation Test Report </title>
+<style type="text/css">	
+	body{
+		text-align: center;
+		background-color: #FFFFF0;
+		font-family: verdana,arial,sans-serif;
+		font-size: 75%;
+		margin: auto;
+	}
+	
+	table.summary{
+		text-align: left;
+		font-weight: bold;
+		border-color: #000000;
+		border-style:solid
+		border-width: 1px solid black;
+		border-collapse: collapse;
+		width: 800px;
+	}
+	
+	table.summary th{
+		text-align:left;
+		background-color:#ADD8E6;
+		border: 1.5px solid black;
+		width: 35%;
+	}
+	
+	table.summary td{
+		text-align:left;
+		border: 1.5px solid black;
+		width: auto;
+	}
+	
+	table.result{
+		text-align: left;
+		font-weight: bold;
+		border-color: #000000;
+		border-style:solid
+		border-width: 1px solid black;
+		border-collapse: collapse;
+		width: 800px;
+	}
+	
+	table.result th{
+		text-align:left;
+		background-color:#ADD8E6;
+		border: 1.5px solid black;
+	}
+	
+	table.result td{
+		text-align:left;
+		border: 1.5px solid black;
+		width: auto;
+	}
+	
+	table.result td.feature {
+		text-align: left;
+		font-size:12px;
+		border:1.5px;
+		colspan:"4";
+		height: 20px;
+		vertical-align:bottom;
+	}
+	
+</style>
+</head>
+
+<body>
+<div align="center">
+<p>
+   <h1> Backend Automation Test Report</h1>
+    <h2> Test Summary </h2>
+	<table class="summary">
+		<tbody>
+			<tr>
+			<th>Test Suite Name</th>
+			<td>OrderTestSuite</td>
+		</tr>
+		<tr>
+			<th>Total Test Case Amount</th>
+			<td>9</td>
+		</tr>
+		<tr>
+			<th>Passed Test Case Amount</th>
+			<td>9</td>
+		</tr>
+		<tr>
+			<th>Failed Test Case Amount</th>
+			<td>9</td>
+		</tr>
+		
+		<tr>
+			<th>Skipped Test Case Amount</th>
+			<td>9</td>
+		</tr>
+		<tr>
+			<th>Pass Rate</th>
+			<td>100%</td>
+		</tr>
+		</tbody>
+	</table>
+</p>
+<br>
+<p>
+	<h2> TestSuiteName1 Test Result</h2>
+	<table class="result">
+		<tr>
+		<td class="feature">Feature1Name</td>
+		</tr>
+		<tr>
+			<th>Test Case Name</th>
+			<th>Test Execution Result</th>
+			<th>Test Execution Duration</th>
+			<th>More Information</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+	
+		<tr>
+			<td class="feature">Feature2Name</td>
+		</tr>
+		<tr>
+			<th>Test Case Name</th>
+			<th>Test Execution Result</th>
+			<th>Test Execution Duration</th>
+			<th>More Information</th>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+		
+		<tr>
+			<td class="feature">Feature3Name</td>
+		</tr>
+		
+		<tr>
+			<th>Test Case Name</th>
+			<th>Test Execution Result</th>
+			<th>Test Execution Duration</th>
+			<th>More Information</th>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+	</table>
+ </p>
+ <br>
+ <p>
+	<h2> TestSuiteName2 Test Result</h2>
+	<table class="result">
+		<tr>
+		<td class="feature">Feature1Name</td>
+		</tr>
+		<tr>
+			<th>Test Case Name</th>
+			<th>Test Execution Result</th>
+			<th>Test Execution Duration</th>
+			<th>More Information</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+	
+		<tr>
+			<td class="feature">Feature2Name</td>
+		</tr>
+		
+		<tr>
+			<th>Test Case Name</th>
+			<th>Test Execution Result</th>
+			<th>Test Execution Duration</th>
+			<th>More Information</th>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+		
+		<tr>
+			<td class="feature">Feature3Name</td>
+		</tr>
+		
+		<tr>
+			<th>Test Case Name</th>
+			<th>Test Execution Result</th>
+			<th>Test Execution Duration</th>
+			<th>More Information</th>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+	</table>
+ </p>
+ 
+ 
+</div>
+</body>
+</html>

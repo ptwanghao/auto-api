@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="getFieldsByOrderId"  service_type="order" service_uri="order/getFieldsByOrderId"  method="psf">
+        <input>
+            <parameter name="service_order_id">6371656001865532595</parameter>
+            <parameter name="fields">car_id,driver_id,product_type_id, car_type_ids,fixed_product_id,city,source,flag,estimate_snap</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+        <output>
+            <parameter>flag</parameter>
+            <parameter>car_id</parameter>
+            <parameter>driver_id</parameter>
+            <parameter>product_type_id</parameter>
+            <parameter>fixed_product_id</parameter>
+            <parameter>city</parameter>
+            <parameter>source</parameter>
+            <parameter>car_type_ids</parameter>
+            <parameter>estimate_snap</parameter>
+        </output>
+    </testcase>
+</testsuite>

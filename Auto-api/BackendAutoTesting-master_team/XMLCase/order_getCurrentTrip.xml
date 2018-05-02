@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order" >
+    <testcase name="get_current_trip_should_success_with_valid_parameters" service_type="order" service_uri="order/getCurrentTrip" method ="psf">
+        <input >
+            <parameter name="offset">0</parameter>
+            <parameter name="limit">60</parameter>
+            <parameter name="user_id">26016450</parameter>
+            <parameter name="out_coord_type">mars</parameter>
+            <parameter name="cellphone">16888800000</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+    </testcase>
+</testsuite>

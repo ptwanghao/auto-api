@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreateOrder" >
+    <!-- 下单（CRM_个人账户_预约用车_系统自动派单）-->
+    <testcase name="create_order"  service_type="order" service_uri="state/createorder"  method="psf">
+        <input>
+            <parameter name="user_id">26007737</parameter>
+            <parameter name="passenger_phone">16811070001</parameter>
+            <parameter name="corporate_id">0</parameter>
+
+            <parameter name="expect_start_latitude">39.089408449931</parameter>
+            <parameter name="expect_start_longitude">116.01696787061</parameter>
+
+            <parameter name="city">bj</parameter>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="fixed_product_id">0</parameter>
+            <parameter name="car_type_id">3</parameter>
+            <parameter name="car_type_ids">3</parameter>
+
+            <parameter name="has_custom_decision">0</parameter>
+            <parameter name="is_need_manual_dispatch">0</parameter>
+            <parameter name="is_auto_dispatch">1</parameter>
+
+            <parameter name="source">4000001</parameter>
+            <parameter name="expect_start_time">1478748600</parameter>
+            <parameter name="in_coord_type">baidu</parameter>
+            <parameter name="passenger_name">test-dispatch-16811070001</parameter>
+            
+            <parameter name="expect_end_latitude">40.070769538824</parameter>
+            <parameter name="expect_end_longitude">116.33571114945</parameter>
+            <parameter name="start_position">中国技术交易大厦-地下停车场</parameter>
+            <parameter name="start_address">海淀区北四环西路66号</parameter>
+            <parameter name="end_position">回龙观</parameter>
+            <parameter name="end_address">地铁13号线</parameter>
+            <parameter name="flight_number">0</parameter>
+            <parameter name="is_asap">0</parameter>
+            <parameter name="app_version">iWeidao/6.2.5 D/877035</parameter>
+            <parameter name="sms">留言</parameter>
+            <parameter name="time_span">0</parameter>
+            <parameter name="estimate_price">0</parameter>
+            <parameter name="device_id">0</parameter>
+            <parameter name="corporate_dept_id">0</parameter>
+            <parameter name="estimate_info">D123,T3700</parameter>
+            <parameter name="flag">317829677056</parameter>
+            <parameter name="create_order_longitude">0</parameter>
+            <parameter name="create_order_latitude">0</parameter>
+            <parameter name="ip">0</parameter>
+            <parameter name="order_port">0</parameter>
+            <parameter name="dispatch_type">2</parameter>
+            <parameter name="time_length">3600</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">secuess</result>
+            <result name="result"  check="false">
+                {
+                "preparation":60,
+                "decision_response":60,
+                "is_face_pay":1,
+                "service_order_id":123456789
+                }
+            </result>
+        </expectresult>
+        <output>
+            <parameter alias="order_id">service_order_id</parameter>
+        </output>
+    </testcase>
+</testsuite>

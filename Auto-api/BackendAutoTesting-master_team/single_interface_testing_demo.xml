@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="single interface testing demo">
+    <listeners>
+        <listener class-name="com.yongche.framework.BackendTestReport"/>
+    </listeners>
+
+    <test name="Test Demo 1">
+        <classes>
+            <class name="com.yongche.framework.SingleInterfaceExecutor" />
+        </classes>
+    </test>
+    <test name="Test Demo 2">
+        <classes>
+            <class name="com.yongche.testcase.SingleInterfaceTestDemo" />
+        </classes>
+    </test>
+</suite>

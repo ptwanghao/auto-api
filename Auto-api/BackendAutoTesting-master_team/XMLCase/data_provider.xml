@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataprovider xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../src/main/java/com/yongche/framework/utils/dataProvider/data_provider.xsd">
+
+	<!-- name: tests category name-->
+	<!-- value: xml files directory or single xml file path-->
+	<!-- enable: run the tests or not-->
+    <!--recursive: get all xml files under the directory and its sub directories or not-->
+	<location  name="Pilot" value="XMLCase/SITDemo/Demo1" enable="true" recursive="true"/>
+	<location  name="Pilot2" value="XMLCase/SITDemo_NonExist" enable="true" recursive="false"/>
+</dataprovider>

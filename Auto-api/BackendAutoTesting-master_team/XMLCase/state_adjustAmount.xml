@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="adjustAmount"  service_type="order" service_uri="state/adjustAmount"  method="psf">
+        <input>
+            <parameter name="order_id">""</parameter>
+            <parameter name="start_time">0</parameter>
+            <parameter name="end_time">0</parameter>
+            <parameter name="dependable_distance">15</parameter>
+            <parameter name="deadhead_distance">0</parameter>
+            <parameter name="parking_amount">0</parameter>
+            <parameter name="highway_amount">0</parameter>
+            <parameter name="regulatedri_reason">测试订单</parameter>
+            <parameter name="username">26016450</parameter> <!--操作员名称 -->
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+    </testcase>
+</testsuite>

@@ -1,0 +1,64 @@
+taskList:
+#接口如下：/config ,/config/price ,/config/cityordershort 
+-   id: 1
+    # config接口_安卓
+    testName: configTestAnd
+    uri: /config 
+    methodType: get
+    params: 
+      last_comment_tag_version: 0
+      last_member_rights_version: 1
+      last_city_data_version: 201612261725
+      last_industry_dic_version: 1418820536
+      whole_country_city_version: 1476949473
+      city: bj
+      patch_version: 7.3.0
+      version: 1000
+      last_app_page_string_version: 1
+      out_coord_type: baidu
+-   id: 2
+    # config接口_IOS
+    testName: configTestIos
+    uri: /config  
+    methodType: get
+    params: 
+      city: bj
+      last_app_page_string_version: 1
+      last_city_data_version: 201612261725
+      last_comment_tag_version: 0
+      last_industry_dic_version: 1418820536
+      last_member_rights_version: 1
+      out_coord_type: mars
+      patch_version: 1477456496
+      version: 1000
+      whole_country_city_version: 1476949473
+-   id: 3
+    # config/price 安卓 
+    testName: configPriceAnd
+    uri: /config/price  
+    methodType: get
+    params: 
+       last_version: 1
+-   id: 4
+    # config/price IOS 
+    testName: configPriceIOS
+    uri: /config/price  
+    methodType: get
+    params: 
+      last_version: 1
+-   id: 5
+    # /config/cityordershort   安卓 
+    testName: configCityOrderShortAnd
+    uri: /config/cityordershort  
+    methodType: get
+    params: 
+      last_version: 1
+      out_coord_type: mars
+-   id: 6
+    # /config/cityordershort   ios
+    testName: configCityOrderShortIOS
+    uri: /config/cityordershort  
+    methodType: get
+    params: 
+      last_version: 1
+      out_coord_type: baidu          

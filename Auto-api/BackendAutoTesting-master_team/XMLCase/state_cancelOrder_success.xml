@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order" >
+    <testcase name="CancelOrder" service_type="order" service_uri="state/cancel" method ="psf">
+        <input >
+            <parameter name="order_id">""</parameter>
+            <parameter name="is_cancel_charge">0</parameter>
+            <parameter name="charge_amount">0</parameter>
+            <parameter name="reason_id">0</parameter>
+            <parameter name="extension">No reason</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+    </testcase>
+</testsuite>

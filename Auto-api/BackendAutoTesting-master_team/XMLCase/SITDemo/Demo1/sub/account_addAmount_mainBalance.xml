@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="" module="v1/consumer/adding" method="post" description="用户ERP主帐户添加余额功能正常吗？答：应该正常，不正常就见鬼了">
+        <input>
+            <parameter name="account_id">75000000778</parameter>
+            <parameter name="merchant_id">100001</parameter> <!--用户中心-->
+            <parameter name="amount">100</parameter>
+            <parameter name="balance_type">1</parameter> <!--主副账户 1主 2副 4bucket-->
+            <parameter name="order_id"></parameter>
+            <parameter name="is_check">0</parameter>
+            <parameter name="reason">4</parameter> <!--人工充值-->
+            <parameter name="extra">测试用户ERP主帐户添加余额功能正常</parameter>
+            <parameter name="pay_source">5</parameter> <!-- Android APP -->
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

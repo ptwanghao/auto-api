@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="unBound" module="/v1/bound/unbound" method="post">
+        <input>
+            <parameter name="account_id">185000000927</parameter>
+            <parameter name="merchant_id">800000</parameter>
+            <parameter name="bound_id">241</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

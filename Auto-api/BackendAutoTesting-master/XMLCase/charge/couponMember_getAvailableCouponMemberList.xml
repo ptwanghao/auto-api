@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="charge" host="coupon">
+    <testcase name="getAvailableCouponMemberList" module="/CouponMember/getAvailableCouponMemberList" method="post">
+        <input>
+            <parameter name="user_id_list">26007737</parameter>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="car_type_id">3</parameter>
+            <parameter name="start_time">1485153810</parameter>
+            <parameter name="city">bj</parameter>
+            <parameter name="dest_city">bj</parameter>
+            <parameter name="platform">10</parameter>
+            <parameter name="app_id">0</parameter>
+        </input>
+        <expectresult>
+            <result name="code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

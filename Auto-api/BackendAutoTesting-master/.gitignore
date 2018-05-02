@@ -1,0 +1,33 @@
+# Eclipse files
+.classpath
+.project
+.metadata/
+
+
+# Java class files
+*.class
+
+
+# Generated files
+build/
+target/
+
+
+# Intellij
+#*.iml
+.idea/
+#.idea/workspace.xml
+
+# Mac OS 
+.DS_Store
+
+# log
+log/
+*.log
+
+# Other
+local.properties
+.gradle/
+
+*.html
+

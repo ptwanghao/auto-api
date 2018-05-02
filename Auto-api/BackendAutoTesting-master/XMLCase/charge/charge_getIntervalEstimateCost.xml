@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="charge" host="charge">
+    <testcase name="" module="/v1/Estimate/getIntervalEstimateCost" method="post">
+        <!-- 请不要直接修改此XML的任何数据 但可以在代码码替换相应的参数值 -->
+        <input>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="car_type_id">37</parameter>
+            <parameter name="city">bj</parameter>
+            <parameter name="start_time">1445479241</parameter>
+            <parameter name="in_coord_type">baidu</parameter>
+            <parameter name="fix_pro_id">35</parameter>
+            <parameter name="start_latitude">39.989643</parameter>
+            <parameter name="start_longitude">116.316455</parameter>
+            <parameter name="end_latitude">39.914848</parameter>
+            <parameter name="end_longitude">116.330558</parameter>
+            <parameter name="is_band_card">1</parameter>
+            <parameter name="source">10001</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter >distance</parameter>
+            <parameter >time_length</parameter>
+            <parameter >night_time_length</parameter>
+        </output>
+    </testcase>
+</testsuite>

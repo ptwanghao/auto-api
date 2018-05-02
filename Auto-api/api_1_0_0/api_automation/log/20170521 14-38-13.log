@@ -1,0 +1,253 @@
+17-05-21 14:38:13 INFO[run.py|ln:150]------------------------------------
+17-05-21 14:38:13 INFO[run.py|ln:151]第 1 次
+17-05-21 14:38:13 INFO[run.py|ln:28]['/Users/yongche_wh/api_1_0_0/api_automation/test_case/run.py']
+17-05-21 14:38:13 INFO[run.py|ln:118]start execute combination case
+17-05-21 14:38:13 INFO[api.py|ln:119]00001 010101 CarModel-CarModelList
+17-05-21 14:38:13 INFO[api.py|ln:120]http://sandbox.carmaster.yongche.org/V1/CarModel/getCarModelById?car_brand_id=9&
+17-05-21 14:38:13 INFO[api.py|ln:121]None
+17-05-21 14:38:13 INFO[api.py|ln:122][ 'ret_msg' ] == 'success'
+17-05-21 14:38:13 INFO[api.py|ln:123]{
+  "ret_msg": "success", 
+  "result": [
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "E6纯电动", 
+      "photo": "", 
+      "update_time": 1428900320, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 77
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": -1, 
+      "en_name": "", 
+      "name": "F0", 
+      "photo": "", 
+      "update_time": 1450262927, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 78
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "F3", 
+      "name": "F3", 
+      "photo": "g2/M00/00/03/CgALF1dnoayAA2Y1AABn1nMSmW0968.jpg", 
+      "update_time": 1463375764, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 79
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": -1, 
+      "en_name": "", 
+      "name": "F3R", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 80
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "F6", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 81
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "G3", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 82
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "G3R", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 83
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "G5", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 84
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "G6", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 85
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "L3", 
+      "name": "L3", 
+      "photo": "g2/M00/00/04/CgAL21dnoayAL1rFAABijl40s6E213.jpg", 
+      "update_time": 1463375803, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 86
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "M6", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 87
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "S6", 
+      "name": "S6", 
+      "photo": "g2/M00/00/04/CgAL21dnoayAEoj2AABoiMw9XWs984.jpg", 
+      "update_time": 1463375818, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 88
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "S7", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 89
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "秦", 
+      "photo": "g2/M00/00/03/CgALF1dnoayAO30UAABjYyQeiEI322.jpg", 
+      "update_time": 1449739883, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 90
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "思锐", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 91
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "surui", 
+      "name": "速锐", 
+      "photo": "g2/M00/00/04/CgAL21dnoayAZZjIAABs1oiBWbU551.jpg", 
+      "update_time": 1463375783, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 92
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "tang", 
+      "name": "唐", 
+      "photo": "g2/M00/00/03/CgAL21dnoayACjLbAABrEAzaJQk264.jpg", 
+      "update_time": 1463369262, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 93
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "S8", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 94
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "福莱尔", 
+      "photo": "", 
+      "update_time": 0, 
+      "create_time": 1403768284, 
+      "person_number": 4, 
+      "car_model_id": 95
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "S5", 
+      "photo": "", 
+      "update_time": 1406694613, 
+      "create_time": 1406694613, 
+      "person_number": 4, 
+      "car_model_id": 1413
+    }, 
+    {
+      "car_brand_id": 9, 
+      "status": 1, 
+      "en_name": "", 
+      "name": "宋", 
+      "photo": "", 
+      "update_time": 1458212247, 
+      "create_time": 1458212247, 
+      "person_number": 4, 
+      "car_model_id": 1583
+    }
+  ], 
+  "ret_code": 200
+}
+17-05-21 14:38:13 INFO[api.py|ln:124][False]
+17-05-21 14:38:14 INFO[run.py|ln:129]thread counts: 0
+17-05-21 14:38:14 INFO[run.py|ln:131]test_case_counts: 6
+17-05-21 14:38:14 INFO[api.py|ln:162]执行用例数: 6
+17-05-21 14:38:14 INFO[api.py|ln:170]失败用例数: 1
+17-05-21 14:38:14 INFO[api.py|ln:179]total_time: 1.1
+17-05-21 14:38:14 INFO[report.py|ln:36]Result
+17-05-21 14:38:15 INFO[run.py|ln:156]------------------------------------

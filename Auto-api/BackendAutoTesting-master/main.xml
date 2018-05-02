@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MainTestSuite">
+    <listeners>
+        <listener class-name="com.yongche.framework.BackendTestReport"/>
+    </listeners>
+
+    <suite-files>
+        <suite-file path="charge.xml" />
+        <suite-file path="order.xml" />
+        <suite-file path="payment.xml" />
+    </suite-files>
+</suite>

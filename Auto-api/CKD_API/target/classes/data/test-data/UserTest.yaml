@@ -1,0 +1,216 @@
+taskList:
+#接口如下： /user(get)  ,/user/coupon,/user/coupon/exchange,/user/collectdriver,/driver ,
+#/driver/comment,/user/collectdriver/delete,user/collectdriver,/user/favor
+-   id: 1
+    # user获取用户信息安卓 
+    testName: userGetAndroid
+    uri: /user
+    methodType: get
+  #  params: 
+-   id: 2
+    # user获取用户信息IOS
+    testName: userGetIOS
+    uri: /user
+    methodType: get
+  #  params: 
+-   id: 3
+    # 获取优惠券 安卓 
+    testName: userCouponGetAnd
+    uri: /user/coupon
+    methodType: get
+    params: 
+      page: 1
+-   id: 4
+    # 获取优惠券 IOS 
+    testName: userCouponGetIOS
+    uri: /user/coupon
+    methodType: get
+    params: 
+      page: 1
+-   id: 5
+    # 兑换兑换码 安卓  
+    testName: userCouponExchAnd
+    uri: /user/coupon/exchange
+    methodType: post
+    params: 
+      code: 100000000
+-   id: 6
+    # 兑换兑换码 ios
+    testName: userCouponExchIOS
+    uri: /user/coupon/exchange
+    methodType: post
+    params: 
+      code: 100000000
+-   id: 7
+    # 安卓收藏司机列表  
+    testName: userCollGetAnd
+    uri: /user/collectdriver
+    methodType: get
+    params: 
+      limit: 10
+      offset: 0
+-   id: 8
+    # IOS收藏司机列表  
+    testName: userCollGetIOS
+    uri: /user/collectdriver
+    methodType: get
+    params: 
+      limit: 10
+      offset: 0
+-   id: 9
+    # 安卓司机详情 
+    testName: driverGetAnd 
+    uri: /driver
+    methodType: get
+   # params:  
+-   id: 10
+    # IOS 司机详情 
+    testName: driverGetIOS
+    uri: /driver
+    methodType: get
+   # params:
+-   id: 11
+    # 安卓司机评价 
+    testName: driCommGetAnd
+    uri: /driver/comment
+    methodType: get
+    params: 
+      limit: 10
+      offset: 0
+-   id: 12
+    #  IOS 司机评价 
+    testName: driCommGetIOS
+    uri: /driver/comment
+    methodType: get
+    params: 
+     limit: 10
+     offset: 0
+-   id: 13
+    #  安卓取消收藏司机
+    testName: userCollDrivDeleAnd
+    uri: /user/collectdriver/delete
+    methodType: post
+  #  params:  driver_Id
+-   id: 14
+    #  IOS取消收藏司机
+    testName: userCollDrivDeleIOS
+    uri: /user/collectdriver/delete
+    methodType: post
+  #  params:  driver_Id 
+-   id: 15
+    #  安卓收藏司机
+    testName: userCollDrivAnd
+    uri: /user/collectdriver
+    methodType: post
+  #  params:  
+-   id: 16
+    #  IOS收藏司机
+    testName: userCollDrivIOS
+    uri: /user/collectdriver
+    methodType: post
+  #  params:  
+-   id: 17
+    # 安卓获取用车喜好列表
+    testName: userFavorGetAnd
+    uri: /user/favor
+    methodType: get
+  #  params:   
+-   id: 18
+    # 安卓设置用车喜好
+    testName: userFavorPostAnd
+    uri: /user/favor
+    methodType: post
+    params: 
+      favor: '{"air_condition":"0","no_call":"1","chat":"0","slow":"0","emergency_light":"0","fm":"0","aromatherapy":"0","front_seat":"0"}'
+      set_global: 1
+-   id: 19
+    # ios获取用车喜好列表
+    testName: userFavorGetIOS
+    uri: /user/favor
+    methodType: get
+  #  params:   
+-   id: 20
+    # IOS设置用车喜好
+    testName: userFavorPostIOS
+    uri: /user/favor
+    methodType: post
+    params: 
+      favor: '{"fm":0,"chat":0,"front_seat":0,"slow":0,"air_condition":0,"no_call":1,"aromatherapy":0,"emergency_light":0}'
+-   id: 21
+    # 安卓黑名单列表
+    testName: userBackDriGetAnd
+    uri: /user/blackdriver
+    methodType: get
+    params: 
+      limit: 10
+      offset: 0
+-   id: 22
+    # IOS黑名单列表
+    testName: userBackDriGetIOS
+    uri: /user/blackdriver
+    methodType: get
+    params: 
+      limit: 10
+      offset: 0
+-   id: 23
+    # 安卓 取消拉黑司机
+    testName: userBackDriDelAnd
+    uri: /user/blackdriver/delete
+    methodType: post
+    # params: driver_id
+-   id: 24
+    # 安卓 拉黑司机
+    testName: userBackDriPostAnd
+    uri: /user/blackdriver
+    methodType: post
+    # params: driver_id  
+-   id: 25
+    # ios取消拉黑司机
+    testName: userBackDriDelIOS
+    uri: /user/blackdriver/delete
+    methodType: post
+    # params: driver_id
+-   id: 26
+    # IOS 拉黑司机
+    testName: userBackDriPostIOS
+    uri: /user/blackdriver
+    methodType: post
+    # params: driver_id
+-   id: 27
+    # 安卓 修改用户信息
+    testName: userPostAnd
+    uri: /user
+    methodType: post
+    params: 
+      name: 1688313
+      gender: F
+      profession: 没有职位
+      birth_date: 1990/12/5
+      industry_id: 5
+      company: 没有公司
+      tags: 90后,邻家小妹,小清新,初出茅庐,女强人
+-   id: 28
+    # IOS 修改用户信息
+    testName: userPostIOS
+    uri: /user
+    methodType: post
+    params: 
+      name: 1688313
+      gender: F
+      profession: 没有职位
+      birth_date: 1990-12-15
+      industry_id: 5
+      company: 没有公司
+      tags: 90后,邻家小妹,小清新,初出茅庐,女强人
+-   id: 29
+    # 安卓用户标签
+    testName: userTagsGetAnd
+    uri: /user/tags
+    methodType: get
+   # params:  
+-   id: 30
+    # IOS用户标签
+    testName: userTagsGetIOS
+    uri: /user/tags
+    methodType: get
+   # params:                                                     

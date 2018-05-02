@@ -1,0 +1,42 @@
+taskList:
+#接口如下：  测试预估接口的各种场景 
+-   id: 1
+    #安卓  
+    testName: orderEstimAnd
+    uri: /order/estimate
+    methodType: get
+    params: 
+      start_longitude: 116.3423133584
+      in_coord_type: baidu
+      car_type_id: 2,3
+      is_asap: 0
+      end_latitude: 39.631441
+      corp_id: 0
+      city: bj
+      start_time: 1464778
+      time_length: 0
+      product_type_id: 13
+      end_longitude: 118.126797
+      start_latitude: 40.07642531473
+      fixed_product_id: 88
+-   id: 2
+    # IOS  
+    testName: orderEstimIOS
+    uri: /order/estimate
+    methodType: get
+    params:  
+      car_type_id: 2,3
+      city: bj
+      corp_id: -1
+      corporate_dept_id: -1
+      end_latitude: 39.625618
+      end_longitude: 118.120216
+      fixed_product_id: 88
+      in_coord_type: mars
+      is_asap: 0
+      passenger_phone: 1688313285
+      product_type_id: 13
+      start_latitude: 39.983685
+      start_longitude: 116.31063
+      start_time: 1488361800
+      time_length: 1     

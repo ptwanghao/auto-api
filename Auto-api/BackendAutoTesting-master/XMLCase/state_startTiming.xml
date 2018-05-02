@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="startTiming"  service_type="order" service_uri="state/startTiming"  method="psf">
+        <input>
+            <parameter name="order_id">6368321769495743703</parameter>
+            <parameter name="car_id">50072412</parameter>
+            <parameter name="start_time">1478748600</parameter>
+            <parameter name="start_latitude">39.089408449931</parameter>
+            <parameter name="start_longitude">116.01696787061</parameter>
+            <parameter name="in_coord_type">baidu</parameter>
+            <parameter name="driver_version">500</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">secuess</result>
+        </expectresult>
+    </testcase>
+</testsuite>

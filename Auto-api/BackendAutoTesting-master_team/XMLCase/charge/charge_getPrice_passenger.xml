@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="charge" host="charge">
+    <testcase name="" module="/v1/Data/Price/getPrice" method="post">
+        <input>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="car_type_id">4</parameter>
+            <parameter name="city">bj</parameter>
+            <parameter name="product_type_class">1</parameter> <!-- 产品类型（1为时租，非1为定价） -->
+            <parameter name="fixed_product_id">35</parameter> <!-- 固定价格类型（查询定价时为必填项） -->
+            <parameter name="status">1</parameter> <!-- 状态(0或不传-查全部，1-查有效的状态, 2-冻结) -->
+            <parameter name="type">1</parameter><!--查询类型（1-乘客，2-订单）-->
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter >granularity</parameter> <!-- 计费粒度 (单位：秒)  ERP:分钟 -->
+            <parameter >min_fee</parameter> <!-- 最低消费（单位：分) ERP:元-->
+            <parameter >starting_fare</parameter> <!-- 起步价 单位：分) ERP:元 -->
+            <parameter >free_time_length</parameter> <!-- 含时长 (单位：秒) ERP:分钟 -->
+            <parameter >free_distance</parameter> <!-- (含公里 单位：米) ERP:公里 -->
+            <parameter >fee_per_minute</parameter> <!-- (每分钟费用 单位：分) ERP: 元 -->
+            <parameter >fee_per_kilometer</parameter> <!-- (每公里费用 单位：分) ERP: 元 -->
+            <parameter >night_service_fee</parameter> <!-- (夜间服务费 单位：分) ERP: 元/分钟-->
+            <parameter >fee_per_deadhead_kilometer</parameter> <!-- (长途服务费单价 单位：分) ERP:元/公里 -->
+            <parameter >min_response_time</parameter> <!-- (响应时长 单位：秒) ERP:分钟 -->
+            <parameter >min_cancel_time</parameter> <!-- (取消时长 单位：秒) ERP:分钟 -->
+            <parameter >car_type_id</parameter>
+        </output>
+    </testcase>
+</testsuite>
+

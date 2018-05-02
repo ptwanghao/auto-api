@@ -1,0 +1,25 @@
+taskList: #绑卡相关接口
+-   id: 1
+    testName: userCardGetAnd
+    uri: /user/card  
+    methodType: get
+   # params:  没有参数
+-   id: 2
+    testName: userCardGetIOS
+    uri: /user/card  
+    methodType: get
+   # params:  没有参数   
+-   id: 3
+     #安卓 删除信用卡
+    testName: userCardDeleAnd
+    uri: /user/card/delete 
+    methodType: post
+    params: 
+      bound_id: 1
+-   id: 4
+     #ios 删除信用卡
+    testName: userCardDeleIOS
+    uri: /user/card/delete 
+    methodType: post
+    params: 
+      bound_id: 1      

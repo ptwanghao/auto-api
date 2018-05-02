@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="charge" host="charge">
+    <testcase name="" module="/v1/Data/Price/getPriceFromDB" method="post">
+        <input>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="car_type_id">4</parameter>
+            <parameter name="product_type_class">1</parameter>
+            <parameter name="city">bj</parameter>
+            <parameter name="fix_pro_id">35</parameter>
+            <parameter name="status">1</parameter>
+            <parameter name="type">1</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter >granularity</parameter> <!-- 计费粒度 (单位：秒)  ERP:分钟 -->
+            <parameter >min_fee</parameter> <!-- 最低消费（单位：分) ERP:元-->
+            <parameter >starting_fare</parameter> <!-- 起步价 单位：分) ERP:元 -->
+            <parameter >free_time_length</parameter> <!-- 含时长 (单位：秒) ERP:分钟 -->
+            <parameter >free_distance</parameter> <!-- (含公里 单位：米) ERP:公里 -->
+            <parameter >fee_per_minute</parameter> <!-- (每分钟费用 单位：分) ERP: 元 -->
+            <parameter >fee_per_kilometer</parameter> <!-- (每公里费用 单位：分) ERP: 元 -->
+            <parameter >night_service_fee</parameter> <!-- (夜间服务费 单位：分) ERP: 元/分钟-->
+            <parameter >fee_per_deadhead_kilometer</parameter> <!-- (长途服务费单价 单位：分) ERP:元/公里 -->
+            <parameter >min_response_time</parameter> <!-- (响应时长 单位：秒) ERP:分钟 -->
+            <parameter >min_cancel_time</parameter> <!-- (取消时长 单位：秒) ERP:分钟 -->
+        </output>
+    </testcase>
+</testsuite>
+

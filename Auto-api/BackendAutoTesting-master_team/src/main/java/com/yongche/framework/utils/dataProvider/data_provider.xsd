@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" >
+
+<xs:element name="dataprovider">
+    <attribute name="xsi:noNamespaceSchemaLocation">
+        <data type="anyURI"/>
+    </attribute>
+
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="location" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="name"    type="nonEmptyString" use="required" />
+                    <xs:attribute name="value"   type="nonEmptyString" use="required" />
+                    <xs:attribute name="enable"  type="xs:boolean" default="true" />
+                    <xs:attribute name="recursive" type="xs:boolean" default="false" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="nonEmptyString">
+    <xs:restriction base="xs:string">
+        <xs:whiteSpace value="replace"/>
+        <xs:minLength value="1" />
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

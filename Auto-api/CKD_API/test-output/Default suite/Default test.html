@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 15 18:35:21 CST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (267 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yd.testckd.UserLocation.mapLocSearNearbyAndroid()'><b>mapLocSearNearbyAndroid</b><br>Test class: com.yd.testckd.UserLocation<br>Test method: map/location/search ¹úÄÚ¸½½ü °²×¿ </td>
+<td></td>
+<td>0</td>
+<td>AbstractTest(manager=com.yd.test.framework.core.httpclient.HttpConnectionManager@56de5251, resultMap={}, currentPackage=TaskPackage(packageName=null, host=null, port=0, protocol=null, taskList=[Task(id=1, testName=mapLocSearNearbyAndroid, uri=/map/location/search, protocol=http, methodType=get, refTask=null, headers=null, params={local_lat=39.989708, lng=116.316462, address_type=1, mobile=1.6883132885E10, session_id=android_861795031479572_1487149768615, out_coord_type=baidu, local_city=åŒ—äº¬, is_inland=1, place_type=2, in_coord_type=baidu, radius=2000, local_lng=116.316462, lat=39.989708}, expectedResult=null), Task(id=2, testName=mapLocSearNearbyIOS, uri=/map/location/search, protocol=http, methodType=get, refTask=null, headers=null, params={keywords=, lng=116.317136, local_lat=39.983685, city=åŒ—äº¬, mobile=, session_id=ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487154627, nonce=1.48715462735881E15, out_coord_type=mars, local_city=åŒ—äº¬, is_inland=1, place_type=2, in_coord_type=baidu, lat=39.98968, local_lng=116.310614, page_size=5}, expectedResult=null)]), currentTask=Task(id=1, testName=mapLocSearNearbyAndroid, uri=/map/location/search, protocol=http, methodType=get, refTask=null, headers=null, params={local_lat=39.989708, lng=116.316462, address_type=1, mobile=1.6883132885E10, session_id=android_861795031479572_1487149768615, out_coord_type=baidu, local_city=åŒ—äº¬, is_inland=1, place_type=2, in_coord_type=baidu, radius=2000, local_lng=116.316462, lat=39.989708}, expectedResult=null), totalParams={local_lat=39.989708, lng=116.316462, address_type=1, mobile=1.6883132885E10, session_id=android_861795031479572_1487149768615, nonce=1, out_coord_type=baidu, local_city=åŒ—äº¬, is_inland=1, place_type=2, in_coord_type=baidu, radius=2000, local_lng=116.316462, lat=39.989708})</td></tr>
+</table><p>
+</body>
+</html>

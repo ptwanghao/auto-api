@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="setDriverDepart"  service_type="order" service_uri="order/setDriverDepart"  method="psf">
+        <input>
+            <parameter name="where[order_id]">6368321769495743703</parameter>
+            <parameter name="set">1</parameter>
+            <parameter name="flag">67108864</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+    </testcase>
+</testsuite>

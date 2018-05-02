@@ -1,0 +1,286 @@
+taskList:
+#接口如下：/map/location/search  /map/location/suggest  /map/location  map/location/poi
+-   id: 1
+    #安卓上车国内附近
+    testName: mapLocSearNearbyAndroid
+    uri: /map/location/search  
+    methodType: get
+    params:
+      in_coord_type: baidu
+      radius: 2000
+      local_lng: 116.316462
+      local_lat: 39.989708
+      mobile: 16883132885
+      local_city: 北京
+      session_id: android_861795031479572_1487149768615
+      is_inland: 1
+      place_type: 2
+      lat: 39.989708
+      lng: 116.316462
+      out_coord_type: baidu
+      address_type: 1
+-   id: 2
+    #Ios国内上车附近
+    testName: mapLocSearNearbyIOS
+    uri: /map/location/search
+    methodType: get
+    params:
+      city: 北京
+      in_coord_type: baidu
+      is_inland: 1
+      keywords: 
+      lat: 39.98968
+      lng: 116.317136
+      local_city: 北京
+      local_lat: 39.983685
+      local_lng: 116.310614
+      mobile: 
+      out_coord_type: mars
+      page_size: 5
+      place_type: 2
+      session_id: ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487154627
+-   id: 3
+    #安卓国内上车精确搜索
+    testName: mapLocSearAndroid
+    uri: /map/location/search
+    methodType: get
+    params:
+      in_coord_type: baidu
+      local_lng: 116.316576
+      mobile: 16883132885
+      city: 北京
+      is_inland: 1
+      place_type: 1
+      lng: 116.316576
+      address_type: 1
+      local_lat: 39.989697
+      local_city: 北京
+      session_id: android_861795031479572_1487238133091
+      lat: 39.989697070866
+      out_coord_type: baidu
+      keywords: 哈哈
+-   id: 4
+    #IOS国内上车精确搜索
+    testName: mapLocSearIOS
+    uri: /map/location/search
+    methodType: get
+    params:
+      city: 北京
+      in_coord_type: mars
+      is_inland: 1
+      keywords: 哈哈
+      lat: 39.98369
+      lng: 116.310621
+      loal_lat: 39.98369
+      local_city: 北京
+      local_lng: 116.310621
+      mobile: 
+      out_coord_type: mars
+      place_type: 1
+      session_id: ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487238776
+-   id: 5
+    #安卓国外附近
+    testName: mapLocSearNeaForAnd
+    uri: /map/location/search
+    methodType: get
+    params:
+      in_coord_type: baidu
+      radius: 2000
+      local_lng: 116.316576
+      local_lat: 39.989697
+      mobile: 16883132885
+      local_city: 北京
+      session_id: android_861795031479572_1487240901111
+      is_inland: 0
+      place_type: 2
+      lat: 25.036260808862
+      lng: 121.53873118484
+      out_coord_type: baidu
+      address_type: 1
+-   id: 6
+    #IOS国外附近
+    testName: mapLocSearNeaForIOS
+    uri: /map/location/search
+    methodType: get
+    params:
+      city: 台北
+      in_coord_type: baidu
+      is_inland: 0
+      keywords: 
+      lat: 25.036261
+      lng: 121.53873
+      local_city: 北京
+      local_lat: 39.983658
+      local_lng: 116.310618
+      mobile: 
+      out_coord_type: mars
+      page_size: 5
+      place_type: 2
+      session_id: ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487241293
+      user_id: 
+-   id: 7
+    #IOS国外搜索
+    testName: mapLocSearForIOS
+    uri: /map/location/search
+    methodType: get
+    params: 
+      city: 台北
+      in_coord_type: mars
+      is_inland: 0
+      keywords: haha
+      lat: 25.03022
+      lng: 121.53225
+      loal_lat: 39.983684
+      local_city: 北京
+      local_lng: 116.31063
+      mobile: 
+      out_coord_type: mars
+      place_type: 1
+      session_id: ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487310745
+-   id: 8
+    #安卓国外搜索
+    testName: mapLocSearForAdroid
+    uri: /map/location/search
+    methodType: get
+    params: 
+      in_coord_type: baidu
+      local_lng: 116.316395
+      mobile: 16883132885
+      city: 台北
+      is_inland: 0
+      place_type: 1
+      lng: 121.53873118484
+      address_type: 1
+      local_lat: 39.989678
+      local_city: 北京
+      session_id: android_861795031479572_1487312339236
+      lat: 25.036260808862
+      out_coord_type: baidu
+      keywords: 哈哈
+-   id: 9
+    #安卓上车国内模糊搜索
+    testName: mapLocSug1Android
+    uri: /map/location/suggest
+    methodType: get
+    params: 
+      cur_lat: 39.989678
+      cur_lng: 116.316395
+      mobile: 16883132885
+      city: 北京
+      local_city: 北京
+      session_id: android_861795031479572_1487314252959
+      lat: 39.989678070868
+      out_coord_type: baidu
+      lng: 116.316395
+      keywords: 哈
+      address_type: 1
+-   id: 10
+    #安卓下车国内模糊搜索
+    testName: mapLocSug2Android
+    uri: /map/location/suggest
+    methodType: get
+    params: 
+      cur_lat: 39.989678
+      cur_lng: 116.316395
+      mobile: 16883132885
+      city: 北京
+      local_city: 北京
+      session_id: android_861795031479572_1487314356278
+      lat: 0
+      out_coord_type: baidu
+      lng: 0
+      keywords: 哈
+      address_type: 2
+-   id: 11
+    #IOS上车国内模糊搜索
+    testName: mapLocSug1IOS
+    uri: /map/location/suggest
+    methodType: get
+    params: 
+      address_type: 1
+      city: 北京
+      cur_city: 北京
+      cur_lat: 39.98369
+      cur_lng: 116.310624
+      keywords: 哈哈
+      lat: 39.982054
+      lng: 116.312562
+      mobile: 
+      out_coord_type: mars
+      session_id: ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487314999
+-   id: 12
+    #IOS下车国内模糊搜索
+    testName: mapLocSug2IOS
+    uri: /map/location/suggest
+    methodType: get
+    params: 
+      address_type: 2
+      city: 北京
+      cur_city: 北京
+      cur_lat: 39.983687
+      cur_lng: 116.310626
+      keywords: 哈哈
+      lat: 39.90817
+      lng: 116.397945
+      mobile: 
+      out_coord_type: mars
+      session_id: ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487314999
+-   id: 13
+    #IOS 位置
+    testName: mapLocationIOS
+    uri: /map/location
+    methodType: get
+    params: 
+      coord_source: wifi
+      in_coord_type: mars
+      lat: 39.982487
+      lng: 116.310787
+      mobile_type: iPhone 6
+      out_coord_type: mars
+      provider: apple
+-   id: 14
+    #安卓 位置
+    testName: mapLocationAndroid
+    uri: /map/location
+    methodType: get
+    params: 
+      in_coord_type: baidu
+      precision: 0
+      coord_source: wf
+      mobile_type: C106
+      lat: 39.988487341196
+      lng: 116.319239875267
+      out_coord_type: baidu
+      provider: bmap  
+-   id: 15
+    #安卓 上下车地点回传POI
+    testName: mapLocationPoiAnd
+    uri: /map/location/poi
+    methodType: get
+    params: 
+      coord_type: baidu
+      poi_id: b_e5a60391da0ba666b75f1e9a
+      name: 北科置业大厦
+      session_id: android_861795031479572_1487319595247
+      index: 2
+      lat: 39.987618396832
+      lng: 116.32147267056
+      so_type: 1
+      provider: search
+-   id: 16
+    #ios 上下车地点回传POI
+    testName: mapLocationPoiIOS
+    uri: /map/location/poi
+    methodType: get
+    params: 
+      coord_type: mars
+      index: 2
+      lat: 39.91553
+      lng: 116.373866
+      name: 哈哈镜便利店(西单北大街)
+      poi_id: a_B0FFFAHX5R
+      provider: suggesion
+      session_id: ios:35D06D0D-1665-40BC-9B11-B80F2F72635C:1487320541
+      so_city: 北京市
+      so_type: 1
+      so_word: 哈哈

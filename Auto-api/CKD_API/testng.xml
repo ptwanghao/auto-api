@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+testNG可以从多个线程中运行测试方法，只需要将配置文件中suite的parallel属性设为true。
+线程的数目在thread-count中设置。
+如果两个方法有依赖关系，那么他们将在一个线程中运行，
+除此之外，都可以在多个线程中并发的运行
+-->
+<suite name='auto-test' parallel="false" thread-count="1">
+    <test annotations="JDK" junit="false" name="autotest" verbose="5"
+          preserve-order="true">
+        <classes>
+        <!-- demo里的内容   
+           <class name="com.yd.test.CreateAuthTest"></class>
+            <class name="com.yd.test.GetInitConfigure"></class>
+            <class name="com.yd.test.Estimate"></class>
+          -->  
+          <class name="com.yd.testckd.AccessToken"></class>
+          <class name="com.yd.testckd.UserAddress"></class>    
+          <class name="com.yd.testckd.MapLocation"></class> 
+          <class name="com.yd.testckd.ConfigTest"></class>  
+          <class name="com.yd.testckd.OrderAll"></class> 
+          <class name="com.yd.testckd.Orders"></class>  
+          <class name="com.yd.testckd.UserTest"></class> 
+          <class name="com.yd.testckd.FlightTest"></class>  
+          <class name="com.yd.testckd.HomeNotification"></class>
+          <class name="com.yd.testckd.OrderEstimateTest"></class>
+          <class name="com.yd.testckd.UserCardTest"></class>
+          <class name="com.yd.testckd.UserPassengerTest"></class>  
+        </classes>
+    </test>
+    <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <usedefaultlisteners name="false" />
+</suite>

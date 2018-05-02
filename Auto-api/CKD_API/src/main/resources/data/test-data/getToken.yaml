@@ -1,0 +1,24 @@
+#模块名
+packageName: estimate
+#模块host(ip：0.0.11.12,域名：testing.driver-api.yongche.org)
+host: appapi.yongche.com
+#默认80
+port: 80
+#支持协议http,https
+protocol: https
+#测试接口任务列表
+taskList:
+- id: 1
+  #测试方法名
+  testName: getToken
+  #服务uri，注意带/
+  uri: /oauth2/token.php
+  methodType: post
+  #如果需要设置header，就写，不需要可以去掉
+    
+  #请求参数
+    
+ 
+    
+
+

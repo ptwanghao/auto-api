@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="addBound" module="/v1/bound/bound" method="post">
+        <input>
+            <parameter name="account_id">185000000927</parameter>
+            <parameter name="merchant_id">100003</parameter>
+            <parameter name="bound_type">1</parameter>
+            <parameter name="pay_channel">21</parameter>
+            <parameter name="pay_source">2</parameter>
+            <parameter name="card_no">1000</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter alias="bound_id">bound_id</parameter>
+        </output>
+    </testcase>
+</testsuite>

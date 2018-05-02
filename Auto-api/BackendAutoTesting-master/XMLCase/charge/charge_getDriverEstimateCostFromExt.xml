@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" host="charge">
+    <testcase name="getDriverEstimateCostFromExt"  module="V1/Estimate/getDriverEstimateCostFromExt"  method="post">
+        <input>
+            <parameter name="service_order_id">6371656001865532595</parameter>
+            <parameter name="flag">1099511627776</parameter>
+            <parameter name="driver_system_bidding">0</parameter>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="fixed_product_id">0</parameter>
+            <parameter name="car_type_ids">2</parameter>
+            <parameter name="city">bj</parameter>
+            <parameter name="source">11000001</parameter>
+            <parameter name="estimate_snap">""</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter>预估距离</parameter>
+            <parameter>预估时间</parameter>
+            <parameter>预估夜间时间</parameter>
+        </output>
+    </testcase>
+</testsuite>

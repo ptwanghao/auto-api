@@ -1,0 +1,26 @@
+#模块名
+packageName: login
+#模块host(ip：0.0.11.12,域名：testing.driver-api.yongche.org)
+host: 10.0.11.12
+#默认80
+port: 8
+#支持协议http,https
+protocol: https
+#测试接口任务列表
+taskList:
+-   id: 1
+    #测试方法名
+    testName: testLogin
+    #服务uri，注意带/
+    uri: /login/one
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      cookie: key=value
+    #请求参数
+    params:
+      IMEI: 42424242safsd
+      userId: 2342523452345
+-   id: 2
+    testName: login-2
+    uri: /login/two

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ChargeTestSuite">
+    <listeners>
+        <listener class-name="com.yongche.framework.BackendTestReport"/>
+    </listeners>
+    <test name ="ChargeTest">
+        <classes>
+            <class name="com.yongche.testcase.charge.ChargePassengerTest"/>
+            <class name="com.yongche.testcase.charge.ChargeDriverTest"/>
+        </classes>
+    </test>
+</suite>

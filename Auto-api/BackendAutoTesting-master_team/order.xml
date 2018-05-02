@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OrderTestSuite">
+	<listeners>
+		<listener class-name="com.yongche.framework.BackendTestReport"/>
+	</listeners>
+    <test name="OrderTest">
+        <classes>
+            <class name="com.yongche.testcase.order.CreateOrderTest"/>
+            <class name="com.yongche.testcase.order.CancelOrderTest"/>
+            <class name="com.yongche.testcase.order.GetHistoryOrderTest"/>
+            <class name="com.yongche.testcase.order.GetCurrentTripTest"/>
+            <class name="com.yongche.testcase.order.GetOrderInServiceTest"/>
+            <class name="com.yongche.testcase.order.CancelOneDayOrderTest"/>
+            <class name="com.yongche.testcase.order.CancelHalfDayOrderTest"/>
+            <class name="com.yongche.testcase.order.CreateOrderFrozenTest"/>
+            <class name="com.yongche.testcase.order.DriverDispatchOrderTest"/>
+        </classes>
+    </test>
+</suite>

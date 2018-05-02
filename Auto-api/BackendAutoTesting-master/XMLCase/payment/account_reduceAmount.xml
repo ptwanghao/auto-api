@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="" module="v1/account/reduceAmount" method="post">
+        <input>
+            <parameter name="account_id">75000000778</parameter>
+            <parameter name="merchant_id">100000</parameter>
+            <parameter name="amount">100</parameter>
+            <parameter name="balance_type">1</parameter> <!--主副账户 1主 2副 4bucket-->
+            <parameter name="reason">1</parameter>
+            <parameter name="extra">测试</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order">
+    <testcase name="clearCar" service_type="order" service_uri="state/clearCar" method ="psf">
+        <input>
+            <parameter name="order_id">6353027158132066859</parameter>
+            <parameter name="driver_id"></parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">secuess</result>
+        </expectresult>
+    </testcase>
+</testsuite>

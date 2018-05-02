@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="confirm"  service_type="order" service_uri="state/confirm"  method="psf">
+        <input>
+            <parameter name="service_order_id">6368321769495743703</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+        <output>
+            <parameter alias="order_id">service_order_id</parameter>
+        </output>
+    </testcase>
+</testsuite>

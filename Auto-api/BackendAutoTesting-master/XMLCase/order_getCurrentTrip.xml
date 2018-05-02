@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order" >
+    <testcase name="get_current_trip_should_success_with_valid_parameters" service_type="order" service_uri="order/getCurrentTrip" method ="psf">
+        <input >
+            <parameter name="offset">0</parameter>
+            <parameter name="limit">60</parameter>
+            <parameter name="user_id">26016450</parameter>
+            <parameter name="out_coord_type">mars</parameter>
+            <parameter name="cellphone">16888800000</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+            <result name="result" check="false">
+                [
+                    {"service_order_id":"6356122718058873229",
+                    "product_type_id":8,
+                    "source":11000001,
+                    "status":"7",
+                    "abnormal_mark":0,
+                    "flag":"44096815104",
+                    "user_id":26016450,
+                    "passenger_name":"xuyang",
+                    "passenger_phone":"16888800000",
+                    "city":"bj",
+                    "flight_number":"未知",
+                    "create_time":1479900143,
+                    "init_time":1479900143,
+                    "arrival_time":1479900297,
+                    "car_id":50071702,
+                    "car_type_id":2,
+                    "car_type_ids":"2",
+                    "car_type":"舒适车型",
+                    "car_brand":"北汽B60",
+                    "driver_id":50061526,
+                    "driver_phone":"16812310005",
+                    "driver_name":"comedy11",
+                    "vehicle_number":"8877",
+                    "expect_start_time":1480936246,
+                    "expect_end_time":0,
+                    "start_time":1479900300,
+                    "end_time":1479900311,
+                    "confirm_time":1479900173,
+                    "start_position":"中关村SOHO大厦",
+                    "start_address":"中关村SOHO大厦",
+                    "end_position":"北京首都机场1号航站楼",
+                    "end_address":"北京首都机场1号航站楼",
+                    "expect_start_latitude":39.983376435357,
+                    "expect_start_longitude":116.31049397943,
+                    "expect_end_latitude":40.070320308448,
+                    "expect_end_longitude":116.58848054508,
+                    "start_latitude":39.983834777538,
+                    "start_longitude":116.30746987818,
+                    "end_latitude":39.983834777538,
+                    "end_longitude":116.30746987818,
+                    "pay_status":3,
+                    "version":"9",
+                    "balance_status":"3",
+                    "total_amount":"106.00",
+                    "deposit":106,
+                    "pay_amount":0,
+                    "origin_amount":106,
+                    "actual_time_length":"11",
+                    "dependable_distance":"0",
+                    "mileage":0,
+                    "time_length":300,
+                    "confirm_latitude":39.983834777538,
+                    "confirm_longitude":116.30746987818,
+                    "arrive_latitude":39.983834777538,
+                    "arrive_longitude":116.30746987818,
+                    "runtime":11,
+                    "total_distance":"0",
+                    "deadhead_distance":"0",
+                    "extension":"{\"favor\":{\"favor_fm\":0,\"favor_slow\":0,\"favor_chat\":0,\"favor_air_condition\":0,\"favor_front_seat\":0,\"favor_aromatherapy\":0,\"favor_emergency_light\":0,\"favor_no_call\":0},\"fee_version\":\"16\",\"passenger_session_id\":\"6356122718058873229\",\"bidding_id\":\"6356117256825035417\"}",
+                    "type":1,
+                    "is_fee_computed":1,
+                    "is_face_pay":1,
+                    "comment_tags":[],
+                    "order_comment_id":0,
+                    "score":0,
+                    "flag_comment_closed":0}
+                ]
+            </result>
+        </expectresult>
+    </testcase>
+</testsuite>

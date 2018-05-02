@@ -1,0 +1,15 @@
+#10.0.11.158     yc_order    order/order
+
+#查找乘客测试帐户创建的订单 service_order表  10.0.11.158     yc_order
+select service_order_id from service_order where passenger_phone in (16801355462,16888800000,16811070001,16800000076)
+
+#查找乘客测试帐户创建的订单 service_order_ext表 
+select ext.service_order_id, orders.service_order_id  from service_order_ext as ext, service_order as orders where orders.passenger_phone in (16801355462,16888800000,16811070001,16800000076)and ext.service_order_id = orders.service_order_id
+
+
+#先删除service_order_ext表 中测试帐户创建的订单
+delete ext.* from service_order_ext as ext, service_order as orders where orders.passenger_phone in (16801355462,16888800000,16811070001,16800000076) and ext.service_order_id = orders.service_order_id
+
+#再删除service_order表中测试帐户创建的订单
+delete from service_order where passenger_phone in (16801355462,16888800000,16811070001,16800000076)
+

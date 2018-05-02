@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="updateAccount" module="/v1/account/update" method="post">
+        <input>
+            <parameter name="account_id">185000000927</parameter>
+            <parameter name="status">0</parameter>
+            <parameter name="account_type">1</parameter>
+            <parameter name="operator_type ">1</parameter>
+            <parameter name="operator_id ">1000</parameter>
+            <parameter name="source">2</parameter>
+            <parameter name="extra">test</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter alias="account_id">account_id</parameter>
+        </output>
+    </testcase>
+</testsuite>

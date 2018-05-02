@@ -1,0 +1,26 @@
+taskList:
+# 乘车人信息相关接口 user/passenger 
+-   id: 1 
+    # 安卓 乘车人列表 
+    testName: userPassGetAnd
+    uri: /user/passenger 
+    methodType: get
+   # params: 
+-   id: 2
+    #安卓 乘车人列表 
+    testName: userPassGetIOS
+    uri: /user/passenger 
+    methodType: get
+   # params: 
+-   id: 3
+    #安卓 删除历史乘车人
+    testName: userPassDeleAnd
+    uri: /user/passenger/delete
+    methodType: post
+   # params:   user_passenger_id 代码里赋值
+-   id: 4
+    #  IOS 删除历史乘车人
+    testName: userPassDeleIOS
+    uri: /user/passenger/delete
+    methodType: post
+   # params:   user_passenger_id 代码里赋值              

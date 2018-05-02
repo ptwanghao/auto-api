@@ -1,0 +1,22 @@
+--SELECT * FROM test_result.Result where case_id = '000000001' order by execute_time desc limit 100;
+--SELECT
+--    case_id, case_name, COUNT(*)
+--FROM
+--    test_result.Result
+--WHERE
+--    case_result = 'fail'
+--        AND DATE_SUB(CURDATE(), INTERVAL 30 DAY) <= date(execute_time)
+--GROUP BY case_name
+--ORDER BY COUNT(*) DESC;
+--
+--SELECT
+--    *
+--FROM
+--    test_result.Result
+--WHERE
+--    case_name = 'XXXX'
+--        AND case_result = 'fail'
+--order by execute_time desc;
+--select * from test_result.Result where execute_time(CURDATE(), INTERVAL 7 DAY) <= date(execute_time);
+--
+--select * from test_result.Result  where DATE_SUB(CURDATE(), INTERVAL 7 DAY) <= date(execute_time);

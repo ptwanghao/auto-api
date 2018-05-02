@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="getStatus"  service_type="order" service_uri="order/getStatus"  method="psf">
+        <input>
+            <parameter name="order_id">6378693333831548060</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+        <output>
+            <parameter>status</parameter>
+        </output>
+    </testcase>
+</testsuite>

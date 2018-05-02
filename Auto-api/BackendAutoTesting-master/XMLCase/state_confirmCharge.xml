@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="confirmCharge"  service_type="order" service_uri="state/confirmCharge"  method="psf">
+        <input>
+            <parameter name="order_id">6368321769495743703</parameter>
+            <parameter name="start_time">1478748600</parameter>
+            <parameter name="end_time">1478748600</parameter>
+            <parameter name="supercritical">3</parameter><!--系统记录公里(单位：公里)  -->
+            <parameter name="mileage">3</parameter><!--司机录入公里（单位：公里） -->
+            <parameter name="highway_amount">0</parameter>
+            <parameter name="parking_amount">0</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+    </testcase>
+</testsuite>

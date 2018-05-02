@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order" >
+    <testcase name="get_order_in_service_should_success_with_valid_parameters" service_type="order" service_uri="order/getOrderInService" method ="psf">
+        <input >
+            <parameter name="offset">0</parameter>
+            <parameter name="limit">500</parameter>
+            <parameter name="driver_id">50062244</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+            <result name="result" check="false">
+            </result>
+        </expectresult>
+    </testcase>
+</testsuite>

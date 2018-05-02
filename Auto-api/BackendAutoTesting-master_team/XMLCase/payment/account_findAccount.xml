@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="findAccount" module="v1/account/find" method="get">
+        <input>
+            <parameter name="account_id">185000000927</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter alias="account_id">account_id</parameter>
+            <parameter alias="user_id">user_id</parameter>
+            <parameter alias="merchant_id">merchant_id</parameter>
+            <parameter alias="type">type</parameter>
+            <parameter alias="status">status</parameter>
+            <parameter alias="create_time">create_time</parameter>
+            <parameter alias="update_time">update_time</parameter>
+            <parameter alias="master_amount">master_amount</parameter>
+            <parameter alias="slave_amount">slave_amount</parameter>
+            <parameter alias="amount">amount</parameter>
+            <parameter alias="credit_amount">credit_amount</parameter>
+            <parameter alias="valid_bucket">valid_bucket</parameter>
+            <parameter alias="invalid_bucket">invalid_bucket</parameter>
+            <parameter alias="invoiceable_amount">invoiceable_amount</parameter>
+            <parameter alias="accumulative_consume_amount">accumulative_consume_amount</parameter>
+        </output>
+    </testcase>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="endTiming"  service_type="order" service_uri="state/endTiming"  method="psf">
+        <input>
+            <parameter name="order_id">6368321769495743703</parameter>
+            <parameter name="car_id">50072412</parameter>
+            <parameter name="end_time">1478748600</parameter>
+            <parameter name="end_latitude">39.089408449931</parameter>
+            <parameter name="end_longitude">116.01696787061</parameter>
+            <parameter name="in_coord_type">baidu</parameter>
+            <parameter name="supercritical">2</parameter><!--系统记录公里-->
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">secuess</result>
+        </expectresult>
+    </testcase>
+</testsuite>

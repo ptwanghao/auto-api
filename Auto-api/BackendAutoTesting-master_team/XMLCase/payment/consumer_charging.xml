@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="" module="v1/consumer/charging" method="post">
+        <input>
+            <parameter name="account_id">75000000778</parameter>
+            <parameter name="merchant_id">600000</parameter> <!--ERP-->
+            <parameter name="amount">100</parameter>
+            <parameter name="balance_type">1</parameter> <!--主副账户 1主 2副 4bucket-->
+            <parameter name="is_check">0</parameter>
+            <parameter name="reason">5</parameter> <!--人工退款-->
+            <parameter name="extra">测试</parameter>
+            <parameter name="pay_source">1</parameter> <!-- 前端网站 -->
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

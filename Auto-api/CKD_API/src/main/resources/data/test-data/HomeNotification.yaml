@@ -1,0 +1,29 @@
+taskList:
+# 接口如下：home/notification
+-   id: 1
+    testName: homeNotifAnd
+    uri: /home/notification 
+    methodType: get
+  #  params:  没能参数
+-   id: 2
+    testName: homeNotifIOS
+    uri: /home/notification 
+    methodType: get
+  #  params:  没能参数
+-   id: 3
+    testName: homeDiscoveryAnd
+    uri: /home/discovery
+    methodType: get
+    params: 
+      business_type: 10
+      out_coord_type: baidu
+      city: bj
+      is_new_device: 0
+-   id: 4
+    testName: homeDiscoveryIOS
+    uri: /home/discovery
+    methodType: get
+    params:  
+      business_type: 10
+      city: bj
+      out_coord_type: mars       

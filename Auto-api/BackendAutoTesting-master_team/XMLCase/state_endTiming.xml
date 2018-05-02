@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="endTiming"  service_type="order" service_uri="state/endTiming"  method="psf">
+        <input>
+            <parameter name="order_id">6368321769495743703</parameter>
+            <parameter name="car_id">50072412</parameter>
+            <parameter name="end_time">1478748600</parameter>
+            <parameter name="end_latitude">39.089408449931</parameter>
+            <parameter name="end_longitude">116.01696787061</parameter>
+            <parameter name="in_coord_type">baidu</parameter>
+            <parameter name="supercritical">15</parameter><!--系统记录公里-->
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">secuess</result>
+        </expectresult>
+        <!--<output>-->
+            <!--<parameter>最小消费金额</parameter>-->
+            <!--<parameter>起步价</parameter>-->
+            <!--<parameter>优惠金百分比</parameter>-->
+            <!--<parameter>优惠金上限</parameter>-->
+            <!--<parameter>实际计费分钟</parameter>-->
+            <!--<parameter>实际计费公里数</parameter>-->
+            <!--<parameter>超出分钟</parameter>-->
+            <!--<parameter>超时费</parameter>-->
+            <!--<parameter>超公里费</parameter>-->
+            <!--<parameter>长途服务公里数</parameter>-->
+            <!--<parameter>长途服务费</parameter>-->
+            <!--<parameter>夜间服务费</parameter>-->
+            <!--<parameter>原始订单基本费用</parameter>-->
+            <!--<parameter>订单加价金额</parameter>-->
+            <!--<parameter>订单基本费用</parameter>-->
+            <!--<parameter>套包优惠起步价</parameter>-->
+            <!--<parameter>套包优惠超公里费</parameter>-->
+            <!--<parameter>套包优惠超时费</parameter>-->
+            <!--<parameter>套包优惠夜间服务费</parameter>-->
+            <!--<parameter>套包优惠长途服务费</parameter>-->
+            <!--<parameter>套包优惠金额</parameter>-->
+            <!--<parameter>优惠后订单基本费用</parameter>-->
+            <!--<parameter>高速费</parameter>-->
+            <!--<parameter>停车费</parameter>-->
+            <!--<parameter>其他费用</parameter>-->
+            <!--<parameter>优惠券折扣</parameter>-->
+            <!--<parameter>限扣券基本费用</parameter>-->
+            <!--<parameter>限扣券金额</parameter>-->
+            <!--<parameter>满减券上限金额</parameter>-->
+            <!--<parameter>满减券金额</parameter>-->
+            <!--<parameter>减免金额</parameter>-->
+            <!--<parameter>会员折扣</parameter>-->
+            <!--<parameter>折扣</parameter>-->
+            <!--<parameter>订单原始金额</parameter>-->
+            <!--<parameter>订单优惠后金额</parameter>-->
+            <!--<parameter>订单优惠金额</parameter>-->
+            <!--<parameter>账户拆分基础本金额</parameter>-->
+            <!--<parameter>账户拆分后优惠金</parameter>-->
+            <!--<parameter>账户拆分本金额</parameter>-->
+            <!--<parameter>取消订单金额</parameter>-->
+            <!--<parameter>用户未付金额</parameter>-->
+            <!--<parameter>应付金额</parameter>-->
+            <!--<parameter>空驶费</parameter>-->
+            <!--<parameter>时租费</parameter>-->
+            <!--<parameter>固定价格</parameter>-->
+            <!--<parameter>公里费</parameter>-->
+            <!--<parameter>司机自主加价金额</parameter>-->
+            <!--<parameter>系统加价金额</parameter>-->
+        <!--</output>-->
+    </testcase>
+</testsuite>

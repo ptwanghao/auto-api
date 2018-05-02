@@ -1,0 +1,47 @@
+taskList:
+#航班相关的接口  user/flighthistory,/flight/complete,/flight
+-   id: 1 
+    #航班历史信息
+    testName: userFlightHisGetAnd
+    uri: /user/flighthistory  
+    methodType: get
+   # params:  没有参数
+-   id: 2
+    testName: userFlightHisGetIOS
+    uri: /user/flighthistory  
+    methodType: get
+   # params:  没有参数
+-   id: 3
+    #安卓 航班搜索
+    testName: flightComGetAnd
+    uri: /flight/complete 
+    methodType: get
+    params: 
+      q: ca1516
+      limit: 10
+-   id: 4
+    # IOS航班搜索
+    testName: flightComGetIOS
+    uri: /flight/complete 
+    methodType: get
+    params: 
+      q: ca1516
+      limit: 10
+-   id: 5
+    #安卓 航班信息
+    testName: flightGetAnd
+    uri: /flight
+    methodType: get
+    params: 
+    #  dep_date: 2017-02-23 代码里重新赋值
+      flight_number: CA1516
+      out_coord_type: baidu
+-   id: 6
+    # IOS 航班信息
+    testName: flightGetIOS
+    uri: /flight
+    methodType: get
+    params: 
+    #  dep_date: 2017-02-23
+      flight_number: CA1516
+      out_coord_type: mars         

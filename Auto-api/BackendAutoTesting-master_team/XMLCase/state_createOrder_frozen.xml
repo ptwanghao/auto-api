@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreateOrder" >
+	<!-- 下单（CRM_个人账户_预约用车_系统自动派单）-->
+	<testcase name="order_createOrder_Frozen_should_failed"  service_type="order" service_uri="state/createorder"  method="psf">
+		<input>
+		  	<parameter name="user_id">13024677</parameter>
+		  	<parameter name="corporate_id">0</parameter>
+		  	<parameter name="passenger_phone">16801355462</parameter>
+		  	<parameter name="passenger_name">test-dispatch-16801355462</parameter>
+		  	<parameter name="city">bj</parameter>
+		  	<parameter name="product_type_id">1</parameter>
+		  	<parameter name="fixed_product_id">0</parameter>
+			<parameter name="car_type_id">2</parameter>
+		  	<parameter name="car_type_ids">2</parameter>
+			<parameter name="car_type">舒适车型</parameter>
+		  	<parameter name="source">11000001</parameter>
+		  	<parameter name="expect_start_time">1487326847</parameter>
+		  	<parameter name="in_coord_type">baidu</parameter>
+		  	<parameter name="expect_end_latitude">40.070769538824</parameter>
+		  	<parameter name="expect_end_longitude">116.33571114945</parameter>
+		  	<parameter name="expect_start_latitude">39.984222069538</parameter>
+		  	<parameter name="expect_start_longitude">116.30777196071</parameter>
+		  	<parameter name="start_position">中国技术交易大厦-地下停车场</parameter>
+		  	<parameter name="start_address">海淀区北四环西路66号</parameter>
+		  	<parameter name="end_position">回龙观</parameter>
+		  	<parameter name="end_address">地铁13号线</parameter>
+		  	<parameter name="flight_number">0</parameter>
+			<parameter name="dest_city">bj</parameter>
+			<parameter name="dst_city_name">北京</parameter>
+			<parameter name="is_asap">0</parameter>
+		  	<parameter name="app_version">aWeidao/7.3.0 D/24837786564493347</parameter>
+		  	<parameter name="sms">passenger</parameter>
+		  	<parameter name="time_span">0</parameter>
+		  	<parameter name="has_custom_decision">0</parameter>
+		  	<parameter name="is_need_manual_dispatch">1</parameter>
+		  	<parameter name="is_auto_dispatch">1</parameter>
+		  	<parameter name="estimate_price">27</parameter>
+		  	<parameter name="device_id">0</parameter>
+		  	<parameter name="corporate_dept_id">0</parameter>
+		  	<parameter name="estimate_info">D123,T3700</parameter>
+		  	<parameter name="flag">0</parameter>
+		  	<parameter name="create_order_longitude">116.316922</parameter>
+		  	<parameter name="create_order_latitude">39.989444</parameter>
+			<parameter name="ip">10.14.18.102</parameter>
+		  	<parameter name="order_port">53909</parameter>
+		  	<parameter name="dispatch_type">2</parameter>
+		  	<parameter name="time_length">3600</parameter>
+			<parameter name="distance">2987</parameter>
+			<parameter name="extension">{"favor":{"favor_fm":0,"favor_slow":0,"favor_chat":0,"favor_air_condition":0,"favor_front_seat":0,"favor_aromatherapy":0,"favor_emergency_light":0,"favor_no_call":0}}</parameter>
+  		</input>
+		<expectresult>
+			<result name="ret_code">12011</result>
+			<result name="result"  check="false">
+				{
+				"hint":"您的账户有恶意下单或作弊行为，已冻结",
+				"limit_flag":2
+				}
+			</result>
+		</expectresult>
+	</testcase>
+</testsuite>

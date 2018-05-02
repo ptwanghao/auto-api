@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="charge" host="coupon">
+    <testcase name="useCoupon" module="CouponMember/useCoupon" method="get">
+        <input>
+            <parameter name="coupon_member_id">1429252737</parameter>
+            <parameter name="service_order_id">6378693333831548060</parameter>
+            <parameter name="user_id">26007737</parameter>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="car_type_id">3</parameter>
+            <parameter name="passenger_phone">16888800000</parameter>
+            <parameter name="expect_start_time">1485153810</parameter>
+            <parameter name="start_time">1485153810</parameter>
+            <parameter name="corporate_id">0</parameter>
+            <parameter name="flag">0</parameter>
+            <parameter name="app_id">0</parameter>
+            <parameter name="create_time">1485153810</parameter>
+            <parameter name="city">bj</parameter>
+            <parameter name="source">0</parameter>
+            <parameter name="app_version">aWeidao/7.3.0 D/2479950715001361</parameter>
+            <parameter name="user_cellphone">16888800000</parameter>
+        </input>
+        <expectresult>
+            <result name="code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

@@ -1,0 +1,66 @@
+#乘客端登录接口
+taskList:
+-   id: 1
+    testName: accTokenNologin
+    uri: /user/token
+    methodType: post
+    params:
+      serialno: 02:00:00:00:00:00
+      imei: 861795031479572
+      brand_id: C106
+      bluetooth_id: 02:00:00:00:00:00
+      grant_type: client_credentials
+      uuid: 861795031479572
+      macaddress: 02:00:00:00:00:00
+-   id: 2
+    testName: accTokenLogin
+    uri: /user/token
+    methodType: post
+    params:
+      grant_type: password
+      username: 16836123123
+      password: 123456
+      deviceToken: DuKAyFATsjcrIG6+GtnSFwYzmnOyXgpSd+h+jPiIit0S+zaK28Ie+oR7e72qGRnOc2BYGjR+UNanXoDWv4YCfkVg
+      uuid: 861795031479572
+      macaddress: 02:00:00:00:00:00
+      imei: 861795031479572
+      brand_id: C106
+      serialno: 02:00:00:00:00:00
+      vdtype: pwd 
+      devicesID: 880246
+-   id: 3
+    testName: userCaptVoidPostAnd
+    uri: /user/captcha/voice
+    methodType: post
+    params: 
+      type: voice_reglogin 
+-   id: 4
+    testName: userCaptVoidPostIOS
+    uri: /user/captcha/voice
+    methodType: post
+    params: 
+      type: voice_reglogin
+-   id: 5
+    testName: userCaptMobilAnd
+    uri: /user/captcha/mobile
+    methodType: post
+    params:  
+      type: reglogin
+-   id: 6
+    testName: userCaptMobilIOS
+    uri: /user/captcha/mobile
+    methodType: post
+    params:  
+      type: reglogin
+-   id: 7
+    testName: userCaptGetAnd
+    uri: /user/captcha
+    methodType: get
+    params:  
+      type: login
+-   id: 8
+    testName: userCaptGetIOS
+    uri: /user/captcha
+    methodType: get
+    params:  
+      type: login         

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="" module="v1/account/find" method="get">
+        <input>
+            <parameter name="account_id">75000000778</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

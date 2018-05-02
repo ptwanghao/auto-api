@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configurations>
+    <!--rootDir : root directory of config INI file -->
+    <!--name : config ini file name -->
+    <!--active : config INI is active or not-->
+    <!--only the first 1 active configuration(active="true") will be regarded as valid to be read-->
+    <!--2 ways to choose the active config
+        1) set the expected one's active = true and set others = false
+        2) move the expected one to the top 1 item
+    -->
+    <configuration rootDir="config" name="config_testing.ini" active="true"/>
+    <configuration rootDir="config" name="config_product_mirror.ini" active="true"/>
+</configurations>
+
+
+

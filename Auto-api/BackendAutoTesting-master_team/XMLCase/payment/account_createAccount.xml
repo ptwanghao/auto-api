@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payment" host="payment">
+    <testcase name="createAccount" module="/v1/account/create" method="post">
+        <input>
+            <parameter name="user_id">26016450</parameter>
+            <parameter name="merchant_id">1000</parameter>
+            <parameter name="account_type">1</parameter>
+            <parameter name="credit_amount">1000</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter alias="account_id">account_id</parameter>
+        </output>
+    </testcase>
+</testsuite>

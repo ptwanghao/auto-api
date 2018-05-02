@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreateOrder" >
+	<testcase name="state_create_order_airport_dropOff_should_succeed_with_valid_parameters"  service_type="order" service_uri="state/createorder"  method="psf">
+		<input>
+		  	<parameter name="user_id">26016450</parameter>
+		  	<parameter name="corporate_id">0</parameter>
+			<parameter name="corporate_dept_id">0</parameter>
+			<parameter name="product_type_id">8</parameter>
+			<parameter name="city">bj</parameter>
+			<parameter name="is_asap">0</parameter>　　//0 - 预约 1 - 随叫随到
+			<parameter name="expect_start_time">1480936246</parameter>
+			<parameter name="expect_start_longitude">116.314009</parameter><!-- 电子城 IT产业园: 116.511322-->
+			<parameter name="expect_start_latitude">39.990169</parameter><!-- 电子城 IT产业园: 39.989615-->
+			<parameter name="expect_end_longitude">116.59458020893</parameter>
+			<parameter name="expect_end_latitude">40.085970350273</parameter>
+		  	<parameter name="start_position">中国技术交易大厦</parameter><!-- 电子城 IT产业园: 电子城·IT产业园-->
+			<parameter name="end_position">北京首都国际机场T1航站楼</parameter>
+			<parameter name="start_address">电子城·IT产业园</parameter>
+			<parameter name="end_address">北京首都国际机场T1航站楼</parameter>
+			<parameter name="app_version">/8.1.0 D/25164630320939202</parameter>
+			<parameter name="sms">passenger</parameter>
+			<parameter name="source">11000001</parameter>
+			<parameter name="car_type_ids[0]">2</parameter>
+			<parameter name="car_type_id[0]">2</parameter>
+			<parameter name="car_type">舒适车型</parameter>
+		  	<parameter name="passenger_name">test-dispatch-16888800000</parameter>
+			<parameter name="passenger_phone">16888800000</parameter>
+		  	<parameter name="flight_number">0</parameter>
+		  	<parameter name="has_custom_decision">0</parameter>
+		  	<parameter name="is_need_manual_dispatch">0</parameter>
+		  	<parameter name="is_auto_dispatch">1</parameter>
+		  	<parameter name="flag">0</parameter>
+			<parameter name="dest_city">bj</parameter>
+            <parameter name="dst_city_name">北京</parameter>
+            <parameter name="dispatch_driver_ids">0</parameter>
+            <parameter name="create_order_longitude">116.511322</parameter>
+            <parameter name="create_order_latitude">39.989615</parameter>
+            <parameter name="create_order_address">电子城·IT产业园</parameter>
+            <parameter name="ip">10.1.20.11</parameter>
+            <parameter name="time_span">0</parameter> //临时
+            <parameter name="order_port">61425</parameter>
+            <parameter name="in_coord_type">baidu</parameter>添加
+            <parameter name="car_type_ids">2</parameter>
+            <parameter name="dispatch_type">2</parameter>
+            <parameter name="fixed_product_id">35</parameter>
+            <parameter name="estimate_info">D17359,T1380</parameter>
+            <parameter name="estimate_price">112</parameter>
+			<!--<parameter name="bidding_id">6444023756950341965</parameter>-->  //注意：参数增加bidding_id后，送机类型订单 没有司机接单
+            <parameter name="time_length">4327</parameter>
+            <parameter name="distance">16093</parameter>
+			<parameter name="dispatch_type">2</parameter>
+			<parameter name="extension">
+              {
+              "favor":
+                  {"favor_fm":0,
+                  "favor_slow":0,
+                  "favor_chat":0,
+                  "favor_air_condition":0,
+                  "favor_front_seat":0,
+                  "favor_aromatherapy":0,
+                  "favor_emergency_light":0,
+                  "favor_no_call":0}
+              }
+			</parameter>
+            <parameter name="device_id">25164630320939202</parameter>
+        </input>
+      <expectresult>
+          <result name="ret_code">200</result>
+          <result name="ret_msg">secuess</result>
+          <result name="result"  check="false">
+              {"preparation":60,
+              "decision_response":60,
+              "is_face_pay":1,
+              "service_order_id":"6356096699146993750"}
+          </result>
+      </expectresult>
+      <output>
+          <parameter alias="order_id">service_order_id</parameter>
+      </output>
+  </testcase>
+</testsuite>

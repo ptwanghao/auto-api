@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSuite name="GetContactList" host="testing.user.yongche.org" >
+	<!-- 获取联系人信息-->
+	<testCase name="getContactList_should_succeed_with_valid_parameters" module="Contact/getContactList">
+		<parameters>
+		  	<parameter name="user_id">234</parameter>
+		  	<parameter name="limit">10</parameter>
+		  	<parameter name="offset">0</parameter>
+		  	<parameter name="cellphone">16811112223</parameter>
+		  	<parameter name="with_count"></parameter>
+  		</parameters>
+		<expectResult>
+		  	<result name="code">200</result>
+		  	<result name="msg">ok</result>
+		  	<result name="result">
+			  	{
+	                "count": 1,
+	                "rows": [
+	                        {
+	                                "user_contact_id": 2397,
+	                                "user_id": 234,
+	                                "app_id": 1,
+	                                "gender": "\u0000",
+	                                "cellphone": "16811112223",
+	                                "name": "111111",
+	                                "status": 1,
+	                                "create_time": 1466992378,
+	                                "update_time": 1466992459,
+	                                "mtime": "2016-06-27 09:54:19"
+	                        }
+	                ],
+	                "limit": 10,
+	                "offset": 0
+	        	}
+		  	</result>
+		</expectResult>
+		<expectParameters>
+			<parameter>user_contact_id</parameter>
+		  	<parameter>create_time</parameter>
+		  	<parameter>cellphone</parameter>
+		</expectParameters>
+	</testCase>
+</testSuite>

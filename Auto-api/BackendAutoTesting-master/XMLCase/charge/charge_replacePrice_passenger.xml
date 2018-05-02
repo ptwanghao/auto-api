@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="charge" host="charge">
+    <testcase name="replaceLuxuryCarPrice" module="v1/Data/Price/replacePrice" method="post">
+        <!-- 请不要直接修改此XML的任何数据 但可以在代码码替换相应的参数值 -->
+        <input>
+            <parameter name="type">1</parameter>
+            <parameter name="product_type_class">1</parameter>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="car_type_id">4</parameter>
+            <parameter name="granularity">240</parameter>
+            <parameter name="min_fee">5000</parameter>
+            <parameter name="starting_fare">3300</parameter>
+            <parameter name="free_time_length">180</parameter>
+            <parameter name="free_distance">2000</parameter>
+            <parameter name="fee_per_minute">200</parameter>
+            <parameter name="fee_per_kilometer">600</parameter>
+            <parameter name="night_service_fee">200</parameter>
+            <parameter name="fee_per_deadhead_kilometer">50</parameter>
+            <parameter name="min_response_time">1800</parameter>
+            <parameter name="min_cancel_time">2400</parameter>
+            <parameter name="status">1</parameter>
+            <parameter name="city">bj</parameter>
+            <parameter name="fixed_product_id">36</parameter>
+            <parameter name="operate_id">system-backend</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+    </testcase>
+</testsuite>

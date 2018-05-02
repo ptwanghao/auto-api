@@ -1,0 +1,28 @@
+#模块名
+packageName: login
+
+#测试接口任务列表
+taskList:
+-   id: 1
+    #测试方法名
+    testName: testCreateAuthCode
+    #服务uri，注意带/
+    uri: /V6/CarMaster/CreateAuthCode
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="4821726c1947cdf3eebacade98173939",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_token="b19053dff3147907935a8263fab9eaf705858b24c",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 217
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市

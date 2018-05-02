@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="order" >
+    <testcase name="updateComboInService"  service_type="order" service_uri="Coupon/updateCombo"  method="psf">
+        <input>
+            <parameter name="service_order_id">999999</parameter>
+            <parameter name="user_mileage_combo_id">0</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+    </testcase>
+</testsuite>

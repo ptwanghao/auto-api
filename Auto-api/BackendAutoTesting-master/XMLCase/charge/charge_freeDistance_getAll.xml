@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="charge" host="charge">
+    <testcase name="" module="/v1/Data/Freedistance/getAll" method="post">
+        <input>
+            <parameter name="product_type_id">1</parameter>
+            <parameter name="car_type_id">4</parameter>
+            <parameter name="city">bj</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+        </expectresult>
+        <output>
+            <parameter >free_long_distance_kilometer</parameter> <!-- 免费长途公里数 (单位：米)  ERP:公里 -->
+        </output>
+    </testcase>
+</testsuite>

@@ -1,0 +1,100 @@
+taskList:
+#接口如下： /order/list, /order get ,order/track ,order/abnormal
+-   id: 1
+    #安卓 行程列表
+    testName: orderListAndroid
+    uri: /order/list 
+    methodType: get
+    params: 
+      limit: 10
+      offset: 0
+      out_coord_type: baidu
+-   id: 2
+    #IOS 行程列表 
+    testName: orderListIOS
+    uri: /order/list 
+    methodType: get
+    params: 
+      limit: 10
+      offset: 0
+      out_coord_type: mars
+-   id: 3
+    #安卓 订单信息
+    testName: orderGetAndroid
+    uri: /order 
+    methodType: get
+    params: 
+      out_coord_type: baidu
+-   id: 5
+    #IOS 订单信息
+    testName: orderGetIOS
+    uri: /order 
+    methodType: get
+    params: 
+      out_coord_type: mars
+-   id: 5
+    #安卓 行程轨迹信息
+    testName: orderTrackAndroid
+    uri: /order/track
+    methodType: get
+    params: 
+      out_coord_type: baidu
+-   id: 6
+    # IOS 行程轨迹信息
+    testName: orderTrackIOS
+    uri: /order/track
+    methodType: get
+    params: 
+      out_coord_type: mars
+-   id: 7
+    # 安卓订单异议
+    testName: orderAbnoGetAnd
+    uri: /order/abnormal
+    methodType: get
+   # params: 
+-   id: 8
+    # ios 订单异议
+    testName: orderAbnoGetIOS
+    uri: /order/abnormal
+    methodType: get
+   # params: 
+-   id: 9
+    # 安卓 删除订单
+    testName: orderDeleAnd
+    uri: /order/delete
+    methodType: post
+   # params:     order_id
+-   id: 10
+    # IOS 删除订单
+    testName: orderDeleIOS
+    uri: /order/delete
+    methodType: post
+   # params:     order_id
+-   id: 11
+    # IOS 评价订单
+    testName: orderCommIOS
+    uri: /order/comment
+    methodType: post
+    params: 
+      comment_tag_id: 62,5,61,15 
+      # order_id
+      content: 
+-   id: 12
+    # 安卓 评价订单
+    testName: orderCommAnd
+    uri: /order/comment
+    methodType: post
+    params: 
+      comment_tag_id: 62,5,61,15  #order_id 
+-   id: 13
+    # 安卓 欠款行程
+    testName: orderArrAnListAnd
+    uri: /order/arrangelist
+    methodType: get
+  #  params:  
+-   id: 14
+    # IOS 欠款行程
+    testName: orderArrAnListIOS
+    uri: /order/arrangelist
+    methodType: get
+  #  params:                   

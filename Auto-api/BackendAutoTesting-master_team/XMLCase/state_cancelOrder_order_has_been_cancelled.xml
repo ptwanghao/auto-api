@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order" >
+    <testcase name="CancelOrder" service_type="order" service_uri="state/cancel" method ="psf">
+        <input>
+            <parameter name="order_id">6352697524585325488</parameter>
+            <parameter name="return_min">1</parameter>
+            <parameter name="reason_id">0</parameter>
+            <parameter name="extension">No reason</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">order has beend canceled, service_order_id=$order_id$</result>
+        </expectresult>
+    </testcase>
+</testsuite>

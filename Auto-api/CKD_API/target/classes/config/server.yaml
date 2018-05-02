@@ -1,0 +1,6 @@
+#模块host(ip：0.0.11.12,域名：testing.driver-api.yongche.org)
+host: testing-client-agent.yongche.org
+#默认80
+port: 443
+#支持协议http,https
+protocol: https

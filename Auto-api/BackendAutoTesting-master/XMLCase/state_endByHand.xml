@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order" >
+    <testcase name="cancelOrder_endByHand" service_type="order" service_uri="state/endbyhand" method ="psf">
+        <input >
+            <parameter name="order_id">"6377146447538570671"</parameter>
+            <parameter name="end_time">1484795880</parameter>
+            <parameter name="end_status">1</parameter>
+            <parameter name="dependable_distance">0</parameter>
+        </input>
+        <expectresult>
+            <result name="ret_code">200</result>
+            <result name="ret_msg">success</result>
+        </expectresult>
+    </testcase>
+</testsuite>

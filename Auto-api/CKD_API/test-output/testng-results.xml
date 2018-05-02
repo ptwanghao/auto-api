@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="267" started-at="2017-02-15T10:35:21Z" finished-at="2017-02-15T10:35:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="267" started-at="2017-02-15T10:35:21Z" finished-at="2017-02-15T10:35:22Z">
+      <class name="com.yd.testckd.UserLocation">
+        <test-method status="PASS" signature="setup()[pri:0, instance:AbstractTest(manager=com.yd.test.framework.core.httpclient.HttpConnectionManager@56de5251, resultMap={}, currentPackage=null, currentTask=null, totalParams={})]" name="setup" is-config="true" duration-ms="8" started-at="2017-02-15T18:35:21Z" finished-at="2017-02-15T18:35:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setPackage(java.lang.reflect.Method)[pri:0, instance:AbstractTest(manager=com.yd.test.framework.core.httpclient.HttpConnectionManager@56de5251, resultMap={}, currentPackage=null, currentTask=null, totalParams={})]" name="setPackage" is-config="true" duration-ms="1" started-at="2017-02-15T18:35:21Z" finished-at="2017-02-15T18:35:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.yd.testckd.UserLocation.mapLocSearNearbyAndroid()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPackage -->
+        <test-method status="PASS" signature="mapLocSearNearbyAndroid()[pri:0, instance:AbstractTest(manager=com.yd.test.framework.core.httpclient.HttpConnectionManager@56de5251, resultMap={}, currentPackage=null, currentTask=null, totalParams={})]" name="mapLocSearNearbyAndroid" duration-ms="245" started-at="2017-02-15T18:35:21Z" description="map/location/search 国内附近 安卓 " finished-at="2017-02-15T18:35:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mapLocSearNearbyAndroid -->
+      </class> <!-- com.yd.testckd.UserLocation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

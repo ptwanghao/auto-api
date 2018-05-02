@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreateOrder" >
+	<testcase name="state_create_order_airport_pickup_should_succeed_with_valid_parameters"  service_type="order" service_uri="state/createorder"  method="psf">
+		<input>
+		  	<parameter name="user_id">26016450</parameter>
+		  	<parameter name="corporate_id">0</parameter>
+			<parameter name="corporate_dept_id">0</parameter>
+			<parameter name="product_type_id">7</parameter>
+			<parameter name="city">bj</parameter>
+			<parameter name="is_asap">0</parameter>
+			<parameter name="expect_start_time">1513782035</parameter>
+			<parameter name="expect_start_longitude">121.332608</parameter>
+			<parameter name="expect_start_latitude">31.201047</parameter>
+			<parameter name="expect_end_longitude">116.4412597179</parameter>
+			<parameter name="expect_end_latitude">39.947116684784</parameter>
+		  	<parameter name="start_position">上海虹桥国际机场2号航站楼</parameter>
+			<parameter name="end_position">上海南站</parameter>
+			<parameter name="start_address">上海虹桥国际机场2号航站楼</parameter>
+			<parameter name="end_address">上海市徐汇区</parameter>
+			<parameter name="app_version">aWeidao/7.1.4 D/24805256802600121</parameter>
+			<parameter name="sms">passenger</parameter>
+			<parameter name="source">11000001</parameter>
+			<parameter name="car_type_id">37</parameter>
+			<parameter name="car_type">Young车型</parameter>
+		  	<parameter name="passenger_name">test-dispatch-16888800000</parameter>
+			<parameter name="passenger_phone">16888800000</parameter>
+		  	<parameter name="flight_number">CA1516</parameter>
+		  	<parameter name="has_custom_decision">0</parameter>
+		  	<parameter name="is_need_manual_dispatch">0</parameter>
+		  	<parameter name="is_auto_dispatch">1</parameter>
+		  	<parameter name="flag">0</parameter>
+		  	<parameter name="dest_city">bj</parameter>
+		  	<parameter name="dst_city_name">北京市</parameter>
+		  	<parameter name="dispatch_driver_ids">0</parameter>
+		  	<parameter name="create_order_longitude">116.316475</parameter>
+		  	<parameter name="create_order_latitude">39.989686</parameter>
+			<parameter name="ip">10.14.30.70</parameter>
+		  	<parameter name="order_port">64137</parameter>
+		  	<parameter name="in_coord_type">baidu</parameter>
+		  	<parameter name="car_type_ids">37</parameter>
+		  	<parameter name="dispatch_type">2</parameter>
+		  	<parameter name="fixed_product_id">38</parameter>
+		  	<parameter name="estimate_info">D16573,T1598</parameter>
+		  	<parameter name="estimate_price">64.0</parameter>
+			<parameter name="bidding_id">6356097001759267316</parameter>
+		  	<parameter name="extension">
+				{
+					"flight_data_id":15301,
+					"favor":
+					{
+						"favor_fm":0,
+						"favor_slow":0,
+						"favor_chat":0,
+						"favor_air_condition":0,
+						"favor_front_seat":0,
+						"favor_aromatherapy":0,
+						"favor_emergency_light":0,
+						"favor_no_call":0
+					}
+				}
+			</parameter>
+		  	<parameter name="device_id">24805256802600121</parameter>
+  		</input>
+		<expectresult>
+			<result name="ret_code">200</result>
+			<result name="ret_msg">secuess</result>
+			<result name="result"  check="false">
+				{"preparation":60,
+				"decision_response":60,
+				"is_face_pay":1,
+				"service_order_id":"6356096699146993750"}
+			</result>
+		</expectresult>
+		<output>
+			<parameter alias="order_id">service_order_id</parameter>
+		</output>
+	</testcase>
+</testsuite>
